@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.github.jinatonic.confetti.ConfettiView
+        android:id="@+id/confettiView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    </FrameLayout>
+
+    <!-- Your purple label goes here -->
+    <TextView
+        android:id="@+id/purpleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="WORDLE"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#5D3FD3" />
+
+    <Button
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animals"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/purpleLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Answers labels 1-->
+
+    <TextView
+        android:id="@+id/guess1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Guess #1"
+        android:textSize="25dp"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toggleButton" />
+
+    <TextView
+        android:id="@+id/word1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="WORD1"
+        android:textSize="25dp"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toEndOf="@+id/guess1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toggleButton" />
+
+    <TextView
+        android:id="@+id/guessChecked1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Guess #1 Check"
+        android:textSize="25dp"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guess1" />
+
+    <TextView
+        android:id="@+id/answer1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="ANSWER1"
+        android:textSize="25dp"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guessChecked1"
+        app:layout_constraintTop_toBottomOf="@id/word1" />
+
+    <!-- Answers labels 2 -->
+
+    <TextView
+        android:id="@+id/guess2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Guess #2"
+        android:textSize="25dp"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guessChecked1" />
+
+    <TextView
+        android:id="@+id/word2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="WORD2"
+        android:textSize="25dp"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toEndOf="@+id/guess2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answer1" />
+
+    <TextView
+        android:id="@+id/guessChecked2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Guess #2 Check"
+        android:textSize="25dp"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guess2" />
+
+    <TextView
+        android:id="@+id/answer2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="ANSWER2"
+        android:textSize="25dp"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guessChecked2"
+        app:layout_constraintTop_toBottomOf="@id/word2" />
+
+    <!-- Answers labels 3-->
+
+    <TextView
+        android:id="@+id/guess3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Guess #3"
+        android:textSize="25dp"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guessChecked2" />
+
+    <TextView
+        android:id="@+id/word3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="WORD3"
+        android:textSize="25dp"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toEndOf="@+id/guess3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/answer2" />
+
+    <TextView
+        android:id="@+id/guessChecked3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Guess #3 Check"
+        android:textSize="25dp"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guess3" />
+
+    <TextView
+        android:id="@+id/answer3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="ANSWER3"
+        android:textSize="25dp"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guessChecked3"
+        app:layout_constraintTop_toBottomOf="@id/word3" />
+
+
+    <!-- WORD -->
+    <TextView
+        android:id="@+id/WORD"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="35dp"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center_vertical|center"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@id/editText" />
+
+    <!-- EditText -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter 4 letter guess here"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GUESS!"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
