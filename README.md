@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img text-align="center" src='/result.gif' title='Video Walkthrough' alt='Video Walkthrough' width="300" height="500"/>
+<img text-align="center" src='/result.gif' title='Video Walkthrough' alt='Video Walkthrough' width="300" height="600"/>
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [Kap](https://getkap.co/) for macOS
